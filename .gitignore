@@ -1,0 +1,30 @@
+@'
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Datasets
+*.csv
+
+# Temporary testing files
+Backend/test_payload.json
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+
+# Unused duplicate model files in project root
+/bank_goodcredit_model_metadata_PR0015.joblib
+/bank_goodcredit_risk_pipeline_PR0015.joblib
+/credit_score_model_PR0015.pkl
+'@ | Set-Content .gitignore
